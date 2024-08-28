@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect. Learn. Earn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+            margin: 0 40px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .signup-btn {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 48px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #7f8c8d;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .lock-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .lock-icon {
+            width: 20px;
+            height: 20px;
+            margin: 0 10px;
+            background-color: #ddd;
+            border-radius: 50%;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            gap: 40px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 0;
+        }
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .earnings {
+            font-size: 36px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .sources {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .source-icon {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+        .app-store-btn {
+            background-color: #000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .toggle-switch {
+            width: 60px;
+            height: 30px;
+            background-color: #007bff;
+            border-radius: 15px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .toggle-switch::after {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-color: white;
+            top: 2px;
+            right: 2px;
+        }
+        .learn-more {
+            text-align: right;
+        }
+        .chat-bubble {
+            background-color: #f0f4f8;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .chat-bubble p {
+            margin: 0;
+        }
+
+        @media (max-width: 1024px) {
+            .content {
+                flex-direction: column;
+            }
+            .card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 20px;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+            .hero .subtitle {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">earnwave</div>
+            <nav>
+                <div class="nav-links">
+                    <a href="#">About</a>
+                    <a href="#">For business</a>
+                    <a href="#">Media</a>
+                    <a href="#">Blog</a>
+                </div>
+                <a href="#" class="signup-btn">Sign up</a>
+            </nav>
+        </header>
+        <div class="hero">
+            <h1>Connect. Learn. Earn</h1>
+            <p class="subtitle">Your data is a profitable asset. With Earnwave you control what data to share anonymously and earn from it.</p>
+            <div class="lock-icons">
+                <div class="lock-icon"></div>
+                <div class="lock-icon"></div>
+                <div class="lock-icon"></div>
+                <div class="lock-icon"></div>
+                <div class="lock-icon"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h2>Your earnings</h2>
+                <div class="earnings">$30.00</div>
+                <p>Next payout in 10,550 pts</p>
+                <svg viewBox="0 0 100 30" width="100%" height="30">
+                    <path d="M0,15 Q25,5 50,15 T100,15" fill="none" stroke="#007bff" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="card">
+                <h2>Connect sources</h2>
+                <div class="toggle-switch"></div>
+                <div class="sources">
+                    <div class="source-icon">
+                        <img src="spotify.png" width="50px" height="50px">
+                    </div>
+                    <div class="source-icon">
+                        <img src="uber.png" width="50px" height="50px">
+                    </div>
+                    <div class="source-icon">
+                        <img src="amazon.png" width="50px" height="50px">
+                    </div>
+                    <div class="source-icon">
+                        <img src="netflix.png" width="50px" height="50px">
+                    </div>
+                </div>
+                <a href="#" class="app-store-btn">Download on the App Store</a>
+            </div>
+            <div class="card">
+                <h2>Learn more from your data</h2>
+                <div class="chat-bubble">
+                    <p>Any products I should be interested in?</p>
+                </div>
+                <div class="chat-bubble">
+                    <p>When do I usually sleep (times versus season)?</p>
+                </div>
+                <div class="chat-bubble">
+                    <p>How much money I saved on discounts?</p>
+                </div>
+                <div class="learn-more">
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
